@@ -65,6 +65,7 @@ dependencies=("cmake" "ninja" "go" "curl")
 for dep in "${dependencies[@]}"; do
   check_and_install "$dep" "$dep"
 done
+brew install go
 
 # Set environment variables for Qt5
 export PATH="/usr/local/opt/qt@5/bin:$PATH"
